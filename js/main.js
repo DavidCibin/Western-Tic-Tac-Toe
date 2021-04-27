@@ -108,11 +108,11 @@ function render() {
         audioEnd2.play();
     } else {
         if (turn === 1) {
-            msgDiv.innerText = `Player X, it's you turn`;
+            msgDiv.innerText = `Player X, it's your turn`;
             audioX.volume = 0.5;
             audioX.play();
         } else {
-            msgDiv.innerText = `Player O, it's turn`;
+            msgDiv.innerText = `Player O, it's your turn`;
             audioX.volume = 0.5;
             audioO.play();
         }
