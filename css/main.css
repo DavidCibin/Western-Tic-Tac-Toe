@@ -31,8 +31,21 @@ section.board {
     vertical-align: middle;
 }
 
+#sq0, #sq3, #sq6 {
+    border-right: 2mm ridge #bba28699;
+}
+
+#sq2, #sq5, #sq8 {
+    border-left: 2mm ridge #bba28699;	
+}
+
+#sq3, #sq4, #sq5 {
+    border-top: 2mm ridge #bba28699;
+    border-bottom: 2mm ridge #bba28699;
+}
+
 div {
-    border: 2mm ridge rgba(187, 162, 134, 0.6);
+    /* border: 2mm ridge rgba(187, 162, 134, 0.6); */
     font-size: 6vmin;
     text-align: center;
     vertical-align: middle;

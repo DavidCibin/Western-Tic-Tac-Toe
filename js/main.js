@@ -90,22 +90,30 @@ function render() {
 
     if (isWinner === 1) {
         msgDiv.textContent = `Player X wins!`;
-        audioEnd2.play();
+        audioEnd1.volume = 0.5;
+        audioEnd2.volume = 0.5;
         audioEnd1.play();
+        audioEnd2.play();
     } else if (isWinner === -1) {
         msgDiv.textContent = `Player O wins!`;
-        audioEnd2.play();
+        audioEnd1.volume = 0.5;
+        audioEnd2.volume = 0.5;
         audioEnd1.play();
+        audioEnd2.play();
     } else if (isWinner === 'T') {
         msgDiv.textContent = `It's a tie! Try again!`;
-        audioEnd2.play();
+        audioEnd1.volume = 0.5;
+        audioEnd2.volume = 0.5;
         audioEnd1.play();
+        audioEnd2.play();
     } else {
         if (turn === 1) {
             msgDiv.innerText = `Player X, it's you turn`;
+            audioX.volume = 0.5;
             audioX.play();
         } else {
             msgDiv.innerText = `Player O, it's turn`;
+            audioX.volume = 0.5;
             audioO.play();
         }
     }
