@@ -23,6 +23,7 @@ PSEUDOCODE
 
 * Upon loading, the app should:
   * Initialize the state variables:
+    * Initialize the board array to 9 nulls to represent empty squares. The 9 elements will "map" to each square, where index 0 maps to the top-left square and index 8 maps to the bottom-right square.
     * Initialize whose turn it is to 1 (player 'X'). Player 'O' will be represented by -1.
     * Initialize winner to null to represent that there is no winner or tie yet. Winner will hold the player value (1 or -1) if there's a winner. Winner will hold a 'T' if there's a tie. 
   * Render those state variables to the page:
@@ -54,5 +55,5 @@ PSEUDOCODE
   * All state has been updated, so render the state to the page (step 4.2).
         
 
-* Handle a player clicking the replay button:
+* Handle a player clicking the "new game" button:
   * Do steps 4.1 (initialize the state variables) and 4.2 (render).
