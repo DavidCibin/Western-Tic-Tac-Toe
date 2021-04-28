@@ -2,9 +2,9 @@ I used surge to deploy my game which you can access [here](http://western-tic-ta
 
 # Western Tic-Tac-Toe
 
-<img src="/images/ttt-print.png" alt="print" border="0">
-
 This is my first project using HTML CSS and JavaScript
+
+<img src="/images/ttt-print.png" alt="print" border="0">
 
 PSEUDOCODE
 
