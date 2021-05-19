@@ -1,4 +1,4 @@
-I used surge to deploy my game, check it [here](http://western-tic-tac-toe.surge.sh/)
+I used surge to deploy my game, you can check it [here](http://western-tic-tac-toe.surge.sh/)
 
 # Western Tic-Tac-Toe
 
