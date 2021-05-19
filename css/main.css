@@ -14,6 +14,7 @@ body {
 
 h1 {
     font-size: 5em;
+    margin-top: 0;
 }
 h2 {
     margin-top: 5px;
@@ -46,15 +47,14 @@ section.board {
 
 div {
     /* border: 2mm ridge rgba(187, 162, 134, 0.6); */
-    font-size: 6vmin;
+    /* font-size: 6vmin; */
     text-align: center;
     vertical-align: middle;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-img{
+img.gun-shot{
     width: 100%;
 }
 
@@ -68,13 +68,14 @@ img{
 
 button {
     display: grid;
+    margin: 0 auto;
     text-align: center;
     vertical-align: middle;
     margin: 0 auto;
-    padding: 5px 5px;
+    padding: 8px 0px 0px 1px;
     border-color: #a49b92;
     border-radius: 8px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     width: 100px;
     color: #2d2a27;
     background-color: rgb(221, 184, 136);
@@ -83,8 +84,8 @@ button {
 }
 
 #audio {
-    margin-bottom: 20px;
-    margin-top: -160px;
+    /* margin-bottom: 20px; */
+    /* margin-top: -160px; */
     background-color: #836b55;
     border-radius: 14px;
     background-image: url(/images/audioOff.png);
@@ -94,4 +95,62 @@ button {
     border: 5px double rgb(204 170 127);
     width: 30px;
     height: 30px;
+}
+
+.menu {
+    display: inline-flex;
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+#details a {
+    text-decoration: none;
+    color: #463a2f;
+}
+#details {
+    width: auto;
+    padding: 0;
+    background-color: #d6be97;
+    visibility: collapse;
+    position: absolute;
+    border-radius: 11px;
+    border: 5px double white;
+    box-shadow: 0 0 34px rgb(90 84 84);
+    bottom: 200px;
+    height: 10%;
+    display: inline-grid;
+    grid-template-columns: 40px auto 40px;
+    grid-template-areas: "github profile linkedin";
+}
+#info {
+    font-family: Georgia;
+    font-size: 18px !important;
+    border-radius: 14px;
+    border: 5px double rgb(173, 169, 169);
+    cursor: help;
+    background-color: #836b55;
+    border-radius: 14px;
+    background-image: url(/images/info.png);
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: center;
+    border: 5px double rgb(204 170 127);
+    width: 30px;
+    height: 30px;
+}
+
+.linkedin img, .github img{
+    height: 35px;
+}
+.github {
+    grid-area: github;
+    margin-right: 15px;
+}
+.linkedin {
+    grid-area: linkedin;
+    margin-left: 15px;
+}
+.profile {
+    grid-area: profile;
 }

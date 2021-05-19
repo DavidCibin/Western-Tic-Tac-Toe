@@ -22,21 +22,23 @@ let sound = false;
 const boardEl = document.querySelectorAll('.board > div');
 let msgDiv = document.getElementById('message');
 let audio = document.getElementById('audio');
+let details = document.getElementById("details");
 
 
 // Event Listeners
 document.querySelector('.board').addEventListener('click', handleClick);
 document.getElementById('button').addEventListener('click', init);
 document.getElementById('audio').addEventListener('click', toggleAudio)
-
+document.getElementById('info').addEventListener('click', infoDetails);
 
 // Functions
 
 // Initialize
 function init() {
+    details.style.visibility = 'collapse';
     board = [null, null, null, null, null, null, null, null, null]
-    turn = 1;
     isWinner = null;
+    turn = 1;
     render();
 }
 
@@ -76,11 +78,11 @@ function render() {
     boardEl.forEach((square, idx) => {
         if (player[board[idx]] == 'X') {
 
-            square.innerHTML = '<img src="images/gun.png">';
+            square.innerHTML = '<img class="gun-shot" src="images/gun.png">';
         }
 
         else if (player[board[idx]] == 'O') {
-            square.innerHTML = '<img src="images/shot.png">';
+            square.innerHTML = '<img class="gun-shot" src="images/shot.png">';
         }
         else if (board[idx] == null) {
             square.innerHTML = ''
@@ -131,6 +133,14 @@ function toggleAudio() {
         sound = false;
         audioBackground.pause();
         audio.style.backgroundImage = "url('images/audioOff.png')";
+    }
+}
+
+function infoDetails() {
+    if (details.style.visibility === "collapse") {
+        details.style.visibility = "unset";
+    } else {
+        details.style.visibility = "collapse";
     }
 }
 
