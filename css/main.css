@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     color: #836b55;
     font-family: 'Rye', cursive;
-    background-image: url(/images/wanted.png), url(/images/wood.jpg);;
+    background-image: url(../images/wanted.png), url(../images/wood.jpg);;
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: auto, 80%;
@@ -88,7 +88,7 @@ button {
     /* margin-top: -160px; */
     background-color: #836b55;
     border-radius: 14px;
-    background-image: url(/images/audioOff.png);
+    background-image: url(../images/audioOff.png);
     background-repeat: no-repeat;
     background-size: 25px 25px;
     background-position: center;
@@ -131,7 +131,7 @@ button {
     cursor: help;
     background-color: #836b55;
     border-radius: 14px;
-    background-image: url(/images/info.png);
+    background-image: url(../images/info.png);
     background-repeat: no-repeat;
     background-size: 22px 22px;
     background-position: center;
