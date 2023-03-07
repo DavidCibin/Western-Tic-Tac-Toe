@@ -1,4 +1,4 @@
-I used surge to deploy my game, you can check it [here](http://western-tic-tac-toe.surge.sh/)
+Play it here [here](http://davidcibin.com/)
 
 # Western Tic-Tac-Toe
 
