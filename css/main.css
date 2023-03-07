@@ -46,8 +46,6 @@ section.board {
 }
 
 div {
-    /* border: 2mm ridge rgba(187, 162, 134, 0.6); */
-    /* font-size: 6vmin; */
     text-align: center;
     vertical-align: middle;
     display: flex;
@@ -72,11 +70,11 @@ button {
     text-align: center;
     vertical-align: middle;
     margin: 0 auto;
-    padding: 8px 0px 0px 1px;
+    padding: 8px 5px;
     border-color: #a49b92;
     border-radius: 8px;
-    /* margin-top: 30px; */
-    width: 100px;
+    white-space: nowrap;
+    width: auto;
     color: #2d2a27;
     background-color: rgb(221, 184, 136);
     font-size: 14px;
@@ -159,4 +157,9 @@ button {
 }
 .profile {
     grid-area: profile;
+}
+.active {
+    outline: 1px solid #575757;
+    filter: brightness(0.9);
+    box-shadow: 1px 0px 6px 3px #0000005e;
 }
